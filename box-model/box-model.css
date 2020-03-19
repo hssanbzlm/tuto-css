@@ -1,0 +1,59 @@
+/* 
+each element has margin left right bottom top
+
+margin is a shorthand property 
+with four values : margin : top, right, bottom, left 
+with 2 values : margin : top bottom , left right
+
+
+box model =>  margin border padding content
+*/
+/*
+border shorthand : 
+border : border-width , border-style , border-color
+
+*/
+div{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    margin-left: 30px;
+    margin: 10px 15px 20px ;
+    border-top: 5px outset blue;
+    border-right: 5px outset blue;
+    border-radius: 12px;
+} 
+h2 {
+    margin :30px;
+    width: 120px;
+    cursor: pointer;
+
+} 
+h2:hover{
+    border-bottom: 2px solid black;
+}
+
+button{ 
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    margin-right: 20px; 
+    
+    /* 
+    border-width :3px;
+    border-style:groove ;
+    border-color:darkgrey;
+
+     */ 
+    border:3px inset darkgrey;
+    border-radius: 20px; 
+    background-color: brown;
+    
+}
+* {
+
+    margin: 0; 
+    border: none;
+}
