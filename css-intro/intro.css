@@ -1,0 +1,21 @@
+
+/*  
+if you add an element that has a height by default
+in a div the div become that height
+
+*/ 
+
+/* 
+ browser has default margin
+*/ 
+
+* {
+    margin: 0px;
+
+}
+div{
+    background-color: tomato;
+    color: teal;
+    height: 200px;
+    width: 200px;
+}
