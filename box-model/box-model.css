@@ -5,17 +5,25 @@ margin is a shorthand property
 with four values : margin : top, right, bottom, left 
 with 2 values : margin : top bottom , left right
 
+margin can accept negative values
 
 box model =>  margin border padding content
 */
 /*
 border shorthand : 
 border : border-width , border-style , border-color
+border radius make anything circular
+
+
+
+padding has the same shorthand as border
+padding is the space between content and border 
+
 
 */
 div{
     height: 50px;
-    width: 50px;
+    width: 300px;
     background-color: green;
     margin-bottom: 18px;
     margin-top: 12px;
@@ -24,10 +32,11 @@ div{
     border-top: 5px outset blue;
     border-right: 5px outset blue;
     border-radius: 12px;
+    padding-top: 50px;
 } 
 h2 {
     margin :30px;
-    width: 120px;
+    width: 110px;
     cursor: pointer;
 
 } 
@@ -56,4 +65,11 @@ button{
 
     margin: 0; 
     border: none;
+}
+
+input {
+border:2px solid green;
+margin: 20px;
+padding: 6px;
+border-radius: 10px;
 }
