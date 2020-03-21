@@ -1,0 +1,72 @@
+/*  
+ids can be given to any element 
+it should be unique
+
+you give this ids styles with # following by the id
+
+is is usually to select one element , and classes to select multiple elements
+
+selector specificity : 
+
+(0,0,0) => weakest (*{})
+(0,0,1)=> second weakest, is for element style directly (button,div...)
+(0,1,0)=> classes specificity , stronger than 0,0,1
+(1,0,0)=> ids specificity , stongest 
+
+you can also combine id+class or element+id+class
+id+class has a specificity of (1,1,0)
+element+id+class has a specificity of(1,1,1)
+
+you can also add style html attribute which is the strongest (highest specificity)
+
+*/
+
+button {
+
+background-color: greenyellow;
+border: 2px solid yellow;
+border-radius: 15px;
+}  
+
+#button-one{
+    background-color: blue;
+}  
+
+.first-button{
+    background-color: crimson;
+}
+
+#our-second-button{
+    height: 40px;
+    width: 90px;
+    background-color: lightgreen;
+    color:lightcoral;
+    border: 2px double darkgreen;
+    border-radius: 15px;
+} 
+
+#first-div{
+    background-color: black;
+    color: white;
+}
+ 
+#second-h1{
+    font-size: 80px;
+
+} 
+
+.turn-me-yellow{
+    color: yellow;
+}
+
+#button-one.first-button{
+    color:green;
+    
+    width: 90px;
+    height: 80px;
+}
+
+button#button-one.first-button{
+    color: grey;
+    font-size: 30px;
+}
