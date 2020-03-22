@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+ul{
+
+    list-style-type: none; /* we use this to remove dots of the list  */ 
+
+
+}
+
+li{
+
+    display: inline-block; /* default value is block , inline-block make it horizontal */
+}
+
+#nav-right-side{
+    display: inline-block;
+    position: fixed; /* position fixed used with top,bottom,right,left to position the element */
+    right:40px; /* this means leave 20px of space from the right of the element */ 
+    top: 18px;
+}
+
+#nav 
+{
+    margin-top: 25px;
+    margin-left: 26px;
+}
+#blue-m{
+
+    background-color: rgb(51, 113, 248);
+    color: white;
+    border-radius: 50%;
+    padding: 6px;
+    padding-left: 9px;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+} 
+
+#main-google{ 
+    text-align: center;
+    position: relative;
+    top: 140px;
+
+}
+
+#google-h1{
+    font-size: 85px;
+}
+
+.separate-nav-items{ 
+    margin-left: 10px;
+
+}
+.google-letters{ 
+    margin-left: -20px;
+
+}
