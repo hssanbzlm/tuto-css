@@ -14,11 +14,75 @@ li{
 
     display: inline-block; /* default value is block , inline-block make it horizontal */
 }
+/* :hover  is a pseudo class 
+*/
+li:hover{ 
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+    line-height: 12px; /* how close the underline */ 
+
+}
+button{
+    height: 32px;
+    width: 110px;
+    border: none;
+    background-color: rgb(240, 238, 238);
+    margin: 20px 3px;
+    letter-spacing: 0.1px;
+    color: rgb(97, 96, 96);
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;/* the blue line when you click , set to none*/
+} 
+
+ 
+button:hover{ 
+    /* first option
+    color: black;
+    border: 1px solid rgb(194, 186, 186);
+    */ 
+
+    /* second option*/
+    box-shadow: 1px 3px 5px lightgray;
+    position: relative;
+    top: -2.5px;
+
+} 
+
+/* 
+button:focus{
+     this is a personalised outline 
+     outline : style ,width , color
+     outline: auto 2px black 
+     you can use , of course border : 1px solid black
+} 
+*/ 
+
+
+
+/*the difference between active and focus is 
+
+focus : when you click the button , in our case
+the shadow  appears , and still exist after the click
+
+
+active : the shadow appears when you click 
+and immediately disappears
+
+*/ 
+
+button:active{
+    box-shadow: 0px 1.5px 2px rgb(65, 65, 65);
+    top:0px;
+}
+
+
+
 
 #nav-right-side{
     display: inline-block;
     position: fixed; /* position fixed used with top,bottom,right,left to position the element */
-    right:40px; /* this means leave 20px of space from the right of the element */ 
+    right:40px; /* this means leave 40px of space from the right of the element */ 
     top: 18px;
 }
 
@@ -27,16 +91,19 @@ li{
     margin-top: 25px;
     margin-left: 26px;
 }
-#blue-m{
+
+#blue-h{
 
     background-color: rgb(51, 113, 248);
     color: white;
     border-radius: 50%;
     padding: 6px;
-    padding-left: 9px;
+    padding-left: 12px;
     height: 20px;
     width: 20px;
     font-size: 18px;
+    line-height: 18px;
+    border:none;
 } 
 
 #main-google{ 
@@ -48,6 +115,63 @@ li{
 
 #google-h1{
     font-size: 85px;
+} 
+
+#google-input{
+
+    height: 30px;
+    width: 450px;
+    border :1px solid lightgrey;
+    border-radius: 30px;
+    margin-top: 12px;
+    padding: 5px 22px;
+    font-size: 17px;
+    outline: none;
+}
+#google-input:hover{ 
+    /* four different values you can add : 
+    1. shadow to the right
+    2. shadow to the bottom
+    3. add a blur effect
+    4. color
+     */ 
+    box-shadow: 0px 2px 6px lightgray;
+}
+#google-input:focus{ 
+    box-shadow: 0px 2px 6px lightgray;
+
+
+}
+
+#button-container{
+   position: relative;
+   top: 12px;
+}
+#footer{
+
+    position: fixed;
+    bottom:0px;
+    background-color: rgb(240, 236, 236);
+    width: 100%;
+    color: rgb(82, 80, 80);
+
+}
+#right-footer{ 
+    display: inline-block;
+    position: fixed;
+    right: 25px;
+    
+}
+#ul-footer{
+    margin-left: 22px;
+    margin-bottom: 5px;
+    padding: 0.5%;
+    padding-top: 1%;
+
+}
+.separate-footer-items{
+
+    margin-left: 10px;
 }
 
 .separate-nav-items{ 
