@@ -1,0 +1,18 @@
+/* 
+   hexadecimal
+   or 
+   RGB
+   or
+   color name
+*/ 
+
+div{
+    height: 500px;
+    width: 500px;
+    /* background-color:rgb(255,0,0); */ 
+   /* Colar name*/ background-color:red;
+    /*  
+    hexadecimal
+    background-color: #ff0000;
+    */
+}
