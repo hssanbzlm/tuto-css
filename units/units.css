@@ -1,0 +1,99 @@
+
+
+/*  
+/* root */ 
+/*
+html{
+    /* it changes default browser
+       font-size
+    */
+ /*   
+    font-size: 50px;
+}
+/*
+p{
+    font-size: 32px;
+    display: inline-block;
+}
+/* 
+ root em 
+ rem is just the browser or root font-size 
+   multiplied by the number we speciy converted to pixels
+   
+   (the default browser font-size is set to 16px)
+
+   if  the browser font-size is 20 px 
+   2rem = 20*2 =40px
+   */
+
+/*
+   #will-use-rem{
+    font-size: 2rem;
+
+}
+
+*/ 
+/*
+p{
+    font-size: 32px;
+}
+#parent-div{
+    display: inline;
+    font-size: 4em;
+} 
+
+/*  
+when we use em , we multiply em value
+by the font-size of parent element 
+which is here div
+
+parent has 50 px font-size  
+  2em*50px=100px 
+*/
+/* 
+#will-use-rem{
+        font-size: 2em;
+}
+
+/* 
+so rem take only into consideration 
+root default font-size 
+em take into consideration parent element
+
+useful in responsive design
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+} 
+/*
+div{
+    width: 50%; /*100% of the parent element width 
+    background-color: red;
+    height: 500px;
+    
+}
+*/ 
+
+/* 
+ viewport is the whole screen from top to bottom 
+
+vw stands for view width it takes care only of viewport width
+  100vw means 100% of viewport width
+
+  vh stands for view height it takes care 
+  only of viewport height 
+
+
+  percentage are based on parent element width and height
+
+*/
+
+div{
+    width: 50vw; 
+    background-color:blueviolet;
+    height: 500vh;
+    
+}
