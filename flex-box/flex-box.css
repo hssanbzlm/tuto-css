@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+/* display flex in a parent element , 
+makes that element e flex container
+
+justify content allows us to move items from left to right 
+justify content :flex-start,flex-end,center,space-around
+you use  justify-content inside your flex container , in our case #div-container
+it aligns items along the main axis which is left to right
+
+flex-start : we want the items to be aligned or pushed to left
+flex-end : we want the items to be aligned or pushed to the right
+center : items aligned in the center
+space-between : items aligned with space between them
+space-around: items aligned with space between them + space on the edges of the browser
+*/
+
+#div-container
+{ 
+     display: flex;
+     justify-content:space-around ;
+     /* 
+     justify-content: space-between;
+     justify-content: flex-start;
+     justify-content: flex-end;
+     justify-content: center;
+     */
+    
+}
+#div1{
+    background-color: gold;
+    height: 250px;
+    width: 250px;
+  
+    
+}
+#div2{ 
+    background-color:green ;
+    height: 250px;
+    width: 250px;
+    
+}
+#div3{ 
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    
+}
+#div4{ 
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    
+}
