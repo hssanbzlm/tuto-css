@@ -4,7 +4,9 @@
 }
  
 /* display flex in a parent element , 
-makes that element e flex container
+makes that element e flex container 
+
+justify-content : 
 
 justify content allows us to move items from left to right 
 justify content :flex-start,flex-end,center,space-around
@@ -16,42 +18,84 @@ flex-end : we want the items to be aligned or pushed to the right
 center : items aligned in the center
 space-between : items aligned with space between them
 space-around: items aligned with space between them + space on the edges of the browser
+
+////////////////
+
+align-items : 
+flex-start , means items inside containers will start at the top
+of the container 
+
+center means items inside containers , items will be between top and bottom of the container
+
+flex-end , means items inside containers will start at the bottom of the bottom
+
+
+////////////
+flex-direction : row (default) main axis moves from left to right
+cross-axis moves from top to bottom 
+justify-content and align-items works exactly how they were
+
+flex-direction :row-reverse is just reverse of the row
+the main axis becomes from right to left , the cross axis still the same (from top to bottom)
+
+flex-directon : column the main axis is now moving from top to bottom
+element in the container no longer aligned horizontally , they are
+now aligned vertically 
+the cross-axis is now moving from left to right 
+
+flex directon: column-reverse is the opposite of column
+
+
+/////
+flex-wrap:wrap , lets elements overflow to the next row
+and keep their natural height and width
+
 */
+
+
 
 #div-container
 { 
      display: flex;
-     justify-content:space-around ;
+     /*justify-content:flex-start;  left to  right*/
      /* 
      justify-content: space-between;
      justify-content: flex-start;
      justify-content: flex-end;
      justify-content: center;
      */
+     /* align-items: center;*/
+     /*flex-direction: row-reverse  reverse main axis which is from the left to the right , default value of flex-direction is row */;
+    /*  align-items: flex-start; up to bottom */
+    /*  flex-direction: row;*/
+     height: 2vh;
+     width: 100vw;
+     flex-wrap: wrap;
+     flex-direction: row;
     
 }
 #div1{
     background-color: gold;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 300px;
   
     
 }
 #div2{ 
     background-color:green ;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 300px;
     
 }
 #div3{ 
     background-color: blue;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 300px;
     
 }
 #div4{ 
     background-color: red;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 300px;
     
 }
