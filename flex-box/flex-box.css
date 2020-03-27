@@ -50,6 +50,28 @@ flex directon: column-reverse is the opposite of column
 flex-wrap:wrap , lets elements overflow to the next row
 and keep their natural height and width
 
+//// 
+when we have more than one row of content 
+align-content will align those rows the same justify-content does
+with its individual properties
+
+///// 
+align-self  allows us to place flex-item among the div
+without it having to be connect to its other div (move it individually)
+//////
+order 
+by default order value is 0 
+the greater it is  , the element will be putted to the end 
+///////
+
+flex-grow 
+
+values start at 0 by default just like order 
+alse takes in a number like order 
+the value cannot be negative
+it covers white space , it affects the main axis
+
+
 */
 
 
@@ -68,16 +90,23 @@ and keep their natural height and width
      /*flex-direction: row-reverse  reverse main axis which is from the left to the right , default value of flex-direction is row */;
     /*  align-items: flex-start; up to bottom */
     /*  flex-direction: row;*/
-     height: 2vh;
+     height: 100vh;
      width: 100vw;
      flex-wrap: wrap;
+     /* justify-content: space-between;*/
      flex-direction: row;
+     align-content:space-around;
+     /* 
+     flex-flow: row wrap; shorthand of flex-wrap+flex-direction
+     */
     
 }
 #div1{
     background-color: gold;
     height: 150px;
     width: 300px;
+    /*align-self: ;*/
+    order: -1;
   
     
 }
