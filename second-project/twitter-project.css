@@ -34,7 +34,12 @@ p{
     flex-direction: column;
     justify-content: space-around;
     font-size: 15px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;/* from fontawesome */
+    /* to use fontawesome  
+      download fontawesome folder from official website
+      import this folder through <link .... 
+      to be able to use the font in your project
+     */
 
 }
 #content-holder-white-half{
