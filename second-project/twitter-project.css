@@ -7,10 +7,14 @@ i{
     width: 7px;
     height: 7px;
 }
-p{ 
 
+button{
+    cursor: pointer;
 }
-
+#main-container-div
+{
+    display: flex;
+}
 #blue-half{ 
     
     background: linear-gradient(to right,#6FC7F3,#17AAF3);
@@ -51,8 +55,9 @@ p{
     border: 1px solid rgb(60, 146, 226);
     background-color: white;
     color: rgb(39, 137, 230);
-   
-   
+} 
+#login-button:hover{
+    background-color: rgb(239, 251, 255);
 
 }
 #signup-button{
@@ -60,21 +65,59 @@ p{
     color: white;
     border: none;
     margin: 15px 0px;
-  
+} 
 
-
-
+#signup-button:hover{
+    background-color:rgb(36, 133, 224);
 }
+
 #twitter-icon{
     font-size: 35px;
     color: rgb(60, 146, 226);
     margin-bottom: 38px;
     margin-left: 3px;
 }
-#loginform-div{
+#loginform-container{
     position: absolute;
-    top: 20px;
+    top: 25px;
 }
+#loginform{ 
+    display: flex;
+
+}
+#loginform-button{
+    height: 34px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: white;
+    color:rgb(60, 146, 226);
+    border:1px solid rgb(60, 146, 226);
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#loginform-button:hover{
+    background-color: rgb(239, 251, 255);
+}
+#loginform-button:focus{
+    outline: none;
+}
+#bottom-container{
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    background-color: white;
+    height: 35px;
+    position: fixed;
+    bottom: 0px;
+
+}
+
+#forgot-password:hover{
+    border-bottom: 1px solid lightgrey;
+    border-width: 20%;
+    cursor: pointer;
+}
+
 .main-divs{ 
     height: 95vh;
     width: 50%;
@@ -87,4 +130,76 @@ p{
     border-radius: 25px;
     outline: none;
 
+}
+.login-inputs{
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.login-inputs:focus{
+    border: 1px solid rgb(60, 146, 226) ;
+}
+
+@media (min-width:1040px ) and (max-width:1350px)
+{  
+    #loginform{
+   
+     position: relative;
+     right: 70px;
+   
+    }
+   
+
+
+} 
+
+@media(min-width:0px) and (max-width:1040px)
+{
+    #loginform{
+        display: none;
+    } 
+    #loginform-container{
+        display: none;
+    }
+    #second-login-button{ 
+        height: 34px;
+        width: 50px;
+        border-radius: 20px;
+        background-color: white;
+        color:rgb(60, 146, 226);
+        border:1px solid rgb(60, 146, 226);
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        left: 220px;
+        top: -10px;
+
+    } 
+    #second-login-button:hover{
+        background-color: rgb(239, 251, 255);
+    }
+    #second-login-button:focus{
+        outline: none;
+    }
+}
+@media (min-width:1041px)
+{
+    #second-login-button{
+        display: none;
+    }
+}
+@media(max-width:690px) and (min-width:0px)
+{
+    #main-container-div{
+        flex-direction: column-reverse;
+
+    }
+    .main-divs{
+        height: 65vh;
+        width: 100%;
+    }
 }
