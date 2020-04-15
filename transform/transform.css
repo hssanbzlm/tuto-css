@@ -21,8 +21,17 @@ negative degrees rotate things counter clock
 
 */
 #will-be-rotated{
-    transform: rotate(90deg);
     transform-origin:left;/* origin by default is the center, you can change it to left,right,bottom,up or two of them up right , bottom left... */
+    transition-duration: 5s;
+    transition-timing-function: steps(5,jump-end);
+    transition-delay: 2s;
+    background-color: yellow;
+    transition-property: all /* what to include with transition movement for example transition in backgroundcolor */
+
+}
+#will-be-rotated:hover{
+     transform: rotate(360deg);
+     background-color: red;
 }
 
 /* 
@@ -37,8 +46,17 @@ X and Y could be negative or positive
 transform-origin will allow us to decide which way the scale moves
 
 */
+
 #will-be-scaled{
+    transition-duration: 3s;
+    opacity: 0.1;
+
+}
+
+#will-be-scaled:hover{
     transform: scale(2,0.5);/*scale(2,0.5) scaleX(2),scaleY(0.5) */
+    transform-origin: left;
+    opacity: 1;
 }
 
 #will-be-skewed{
