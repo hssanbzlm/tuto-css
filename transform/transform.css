@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    border:none;
+}
+div {
+    margin-top: 50px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    color:white
+
+}
+/*
+positive degrees rotate things clockwise 
+negative degrees rotate things counter clock 
+
+
+*/
+#will-be-rotated{
+    transform: rotate(90deg);
+    transform-origin:left;/* origin by default is the center, you can change it to left,right,bottom,up or two of them up right , bottom left... */
+}
+
+/* 
+transform-origin does nothing here
+X and Y could be negative or positive 
+*/
+#will-be-translated{
+    transform: translate(200px,100px);/*tanslateX(200px) translateY(100px) */
+    
+}
+/*
+transform-origin will allow us to decide which way the scale moves
+
+*/
+#will-be-scaled{
+    transform: scale(2,0.5);/*scale(2,0.5) scaleX(2),scaleY(0.5) */
+}
+
+#will-be-skewed{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform:skew(20deg,0deg)
+}
