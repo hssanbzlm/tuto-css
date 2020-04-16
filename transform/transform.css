@@ -64,3 +64,29 @@ transform-origin will allow us to decide which way the scale moves
     margin-bottom: 20px;
     transform:skew(20deg,0deg)
 }
+#keyframe-animation{
+    animation-name: slide;
+    animation-duration: 5s;
+    transform: translateX(200px);
+}
+
+/* use @keyframes
+   and give it a name
+   from start 
+   to end 
+
+   see twitter project
+
+*/
+
+@keyframes slide {
+
+    from{ 
+        transform: translateX(2px);
+
+    }
+    to{ 
+        transform: translateX(200px);
+
+    }
+}
