@@ -44,13 +44,67 @@ button{
       import this folder through <link .... 
       to be able to use the font in your project
      */
+     animation-name: slide-blue-text-holder;
+     animation-duration: 2s;
 
+} 
+
+@keyframes slide-blue-text-holder{
+    from{ 
+        position: absolute;
+        right: 0px;
+
+    }
+    to{ 
+        position: absolute;
+        right: 65vw;
+
+    }
 }
+
+
+
 #content-holder-white-half{
     display: flex;
     flex-direction: column;
+    
 
 }
+#content-holder{
+    animation-duration: 2s;
+    animation-name: content-white-half;
+/*  animation-iteration-count: infinite;   
+Number of times an animation is cycled 
+default number is 1
+*/
+
+}
+ /* instad to and from 
+    you can use percentage of animation duration
+    
+    for example 
+    20% {
+        transform :translateY(500px)
+    } 
+    70%{ 
+        transform :translateY(200px)
+    } 
+    90%{ 
+        transform:translateY(100px)
+    }
+ */
+@keyframes content-white-half{
+    from{ 
+        transform: translatey(500px);
+
+    }
+    to{ 
+        transform: translateY(2px);
+
+    }
+}
+
+
 #login-button{
     border: 1px solid rgb(60, 146, 226);
     background-color: white;
@@ -80,7 +134,23 @@ button{
 #loginform-container{
     position: absolute;
     top: 25px;
+    animation-name: login-slide;
+    animation-duration: 2s;
+    
+} 
+
+@keyframes login-slide{
+    from{ 
+        left: 0px;
+
+    } 
+    to{ 
+        left:63vw;
+
+    }
 }
+
+
 #loginform{ 
     display: flex;
 
