@@ -1,4 +1,4 @@
-# udemy-css
+# tuto-css
 This is a CSS tutorial , each branch contains a specific topic
 
 1-css-intro(master)
