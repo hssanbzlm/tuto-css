@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    
+}
+
+
+form
+{
+    display: flex;
+    margin-left: 90px;
+    margin-top: 15px;
+   
+}  
+
+.bluebar{
+    background-color : #3b5998;
+    width: 100vw;
+    height: 75px;  
+    display: flex; 
+}
+.left-bluebar{
+    width: 50vw;
+    height: 12vh;
+}
+.right-bluebar{
+    width: 50vw;
+    height: 12vh;
+} 
+
+
+.forgot-password{
+    margin-top: 5px;
+    margin-left: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(149, 175, 226);
+    width: 81px;
+} 
+.forgot-password:hover{
+
+    border-bottom: 1px solid rgb(149, 175, 226);
+}
+
+.signup-part{
+    height: 85vh;
+    width: 100vw;
+    background-color:rgb(216, 228, 233);
+    display: flex;
+} 
+.left-side{ 
+    width: 55vw; 
+    
+
+
+} 
+
+.left-side-holder{ 
+    margin-left: 300px;
+    height: 50vh;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+} 
+.left-side-title{
+    width:500px;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0.95;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    line-height: 1.6;
+}
+.left-side-content{
+
+    display: flex;
+    width: 450px;
+
+}  
+
+.bold-text{
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.95;
+} 
+.transparent-text{
+    font-style: normal;
+    opacity: 0.7;
+}
+.left-side-icons{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.left-side-text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+
+}
+
+
+.right-side{
+    width: 45vw;
+
+}
+
+
+.signup-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+} 
+.signup-form{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    width: 70%;
+} 
+
+.firstname-lastname
+{ 
+    display: flex;
+    width: 100%;
+
+
+}
+.signup-form-input-properties{
+    height: 35px;
+    border-radius: 3px;
+    padding-left: 5px;
+    border: 1px solid rgb(150, 178, 187);
+    font-size: 20px;
+    width: 99%;
+
+}
+.signup-form-input-properties:focus{
+    outline: none;
+} 
+
+.select-holder{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+} 
+.select-properties{
+    border: 1px solid rgb(133, 147, 153);
+
+} 
+.select-properties:focus{
+    outline: none;
+}
+.terms-details{
+    font-style: normal;
+    color: rgb(34, 34, 138);
+    cursor: pointer;
+}
+.terms-details:hover{
+    border-bottom: 1px solid rgb(3, 3, 134);
+
+} 
+.signup-button
+{
+    width: 40%;
+    height: 35px;
+    background-color: rgb(76, 143, 76);
+    border: 1px solid rgb(48, 109, 48);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.signup-button:hover{
+    cursor: pointer;
+    background-color: rgb(91, 155, 91);
+}
+.signup-button:active{
+    outline: none;
+    transform: translateY(1px); 
+    
+
+}
+ 
+.create-page {
+    color: rgb(11, 11, 122);
+    font-style: normal;
+}
+.create-page:hover{
+    cursor: pointer;
+    border-bottom: 1px solid rgb(11, 11, 122);
+    font-weight: bold;
+
+}
+
+.bottom-part{
+    height:18vh ;
+    width: 100vw;
+    background-color:white;
+}
+ 
+
+
+#email-input{
+margin-left: 5px;
+width: 125px;
+height: 17px;
+outline: none;
+padding-left: 3px;
+font-size: 11px;
+    
+}
+#password-input{
+    margin-left: 12px;
+    width: 125px;
+    height: 17px;
+    outline: none;
+    padding-left: 3px;
+    font-size: 11px;
+
+
+
+}
+#login-button{
+    margin-left: 12px;
+    margin-top: 15px;
+    width: 48px;
+    height: 20px;
+    color: white;
+    border: 0.5px solid rgb(60, 37, 141);
+    background-color: #4f6aa5;
+    font-size: 12px;
+}
+#login-button:hover{
+
+    background-color: #3b5998;
+    cursor: pointer ;
+}
+
+#login-button:active{
+    background-color: rgb(45, 45, 87);
+    outline: none;
+
+}
+#login-button:focus{
+    outline: none;
+}
