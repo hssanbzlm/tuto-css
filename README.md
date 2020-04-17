@@ -1,9 +1,9 @@
 # tuto-css
 This is a CSS tutorial , each branch contains a specific topic
 
-1-css-intro(master)
+1-master(css-intro)
 
-2-css-box-model
+2-css-box-model(box-model)
 
 3-fonts
 
@@ -19,6 +19,6 @@ This is a CSS tutorial , each branch contains a specific topic
 
 9-second-project (twitter home page) result: https://codepen.io/hssanbzlm/pen/YzyyryO
 
-10- Animations
+10- Animations (transform)
 
 11- Third project (facebook home page)
